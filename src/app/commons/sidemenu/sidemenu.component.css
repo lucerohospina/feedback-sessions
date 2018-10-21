@@ -1,0 +1,136 @@
+nav {
+  height: 100vh;
+  overflow: hidden;
+  padding: 18px;
+  position: fixed;
+  transition: 0.8s;
+  width: 60px;
+  z-index: 1000;
+}
+
+#user-photo {
+  right: 7px;
+  top: -8px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.sidebar-title {
+  display: none;
+  position: absolute;
+  min-width: 248px;
+  z-index: 1;
+}
+
+nav:hover {
+  width: 330px;
+  z-index: 9000;
+}
+
+nav.active {
+  width: 60px;
+}
+
+nav:hover .sidebar-title {
+  display: inline-block;
+}
+
+nav:hover .sidebar-title.active {
+  display: none;
+}
+
+.activated-line {
+  border-left: 4px solid var(--main-green);
+  height: 50px;
+  left: 0;
+}
+
+.activated-bg {
+  background-color: #F5FAFF;
+  height: 50px;
+  left: 0;
+  width: 330px;
+  z-index: -1;
+}
+
+.top-line {
+  border-bottom: 1px solid #A2B6D3;
+  right: -12px;
+  position: absolute;
+  width: 48px;
+}
+
+.top-line-in {
+  border-bottom: 1px solid #A2B6D3;
+  left: 45px;
+  position: absolute;
+  width: 252px;
+}
+
+/* Efecto para los <íconos y títulos> del menú lateral */
+.sidebar-anchor {
+  color: #A2B6D3;
+}
+
+.sidebar-anchor:hover {
+  color: var(--main-green);
+}
+
+.sidebar-anchor.activated {
+  color: var(--main-green);
+}
+
+.user-title {
+  color: #A2B6D3;
+  left: 40px;
+  top: 16px;
+}
+
+.user {
+  color: #A2B6D3;
+  left: 40px;
+  top: 30px;
+}
+
+/* MENU de ABAJO */
+.secondary-list {
+  bottom: 10%;
+  position: absolute;
+}
+
+.secondary-list li {
+  margin-top: 1.5rem;
+}
+
+.secondary-list li a span,
+.secondary-list li a i {
+  color: #A2B6D3;
+}
+
+.secondary-list li a span:hover,
+.secondary-list li a i:hover {
+  color: var(--main-green);
+}
+
+.my-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+
+/* clases para celular volteado */
+@media (min-height: 450px) {
+  .navbar-expand-sm .my-collapse {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+}
