@@ -1,27 +1,47 @@
 # FeedbackSessions
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+## Prototipos de baja fidelidad
 
-## Development server
+* LOGIN:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1) Se busca la manera de establecer los ingresos de ambos tipos de usuarios: **ADMINISTRADOR** y **EMPLEADO**.
 
-## Code scaffolding
+2) En una primera versión pensé en presentar el LOGIN con **_tabs_** según cada tipo de usuario.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3) Sin embargo, me inclino más por el modelo en el que el LOGIN ofrece un saludo personalizado según el tipo de usuario. 
 
-## Build
+**Primera versión**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+![loginfirstdraft](https://user-images.githubusercontent.com/32287019/47310229-22602000-d5fc-11e8-8305-e5b074ec3f3f.JPG)
 
-## Running unit tests
+**Versión que saluda al empleado**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![employeelogin](https://user-images.githubusercontent.com/32287019/47310232-2429e380-d5fc-11e8-8aca-a6302bb2f466.JPG)
 
-## Running end-to-end tests
+**Versión que saluda al administrador**
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+![adminlogin](https://user-images.githubusercontent.com/32287019/47310237-25f3a700-d5fc-11e8-8638-70e9c17e6db7.JPG)
 
-## Further help
+* ORDEN DE ELEMENTOS EN LA PÁGINA:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1) Propongo presentar el **layout** de la página con un **sidemenu**, un **header** y un **main component** que será el que contenga las vistas de la página.
+
+2) El **sidemenu** presentará la fotografía del usuario _logueado_, los _items_ (menus) en los cuáles el usuario hará _click_ para navegar en la página. En la parte baja, presento un botón de bloqueo de la barra de navegación y un botón para cerrar sesión.
+
+3) El **header** en esta primera versión presenta el logo de la empresa.
+
+4) El **main component** presentará las vistas INICIO y DAR FEEDBACK.
+
+**Layout básico**
+
+![layout-view](https://user-images.githubusercontent.com/32287019/47310238-2724d400-d5fc-11e8-996e-663c1f3a13fc.JPG)
+
+## Tecnologías usadas
+
+* [Angular 6](https://angular.io/)
+* [Bootstrap 4.1](https://getbootstrap.com/)
+* [PrimeNg](https://www.primefaces.org/primeng/)
+* [Material Design Icons](https://material.io/tools/icons/)
+
+
+

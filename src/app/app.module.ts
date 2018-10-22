@@ -15,6 +15,7 @@ import { GiveFeedbackComponent } from './pages/give-feedback/give-feedback.compo
 // Prime Ng Component
 import { InputSwitchModule } from 'primeng/inputswitch'
 import { TooltipModule } from 'primeng/tooltip'
+import { AutoCompleteModule } from 'primeng/autocomplete'
 
 const routes : Routes = [
   { path : '', component : LoginComponent },
@@ -40,7 +41,8 @@ const routes : Routes = [
     RouterModule.forRoot(routes),
     FormsModule,
     InputSwitchModule,
-    TooltipModule
+    TooltipModule,
+    AutoCompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]

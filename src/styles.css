@@ -1,3 +1,9 @@
 :root {
   --main-green: #3CCC38;
+  --gray-1: #A2B6D3;
+  --gray-2: #edeaf3;
+}
+
+.bg-light-gray {
+  background-color: var(--gray-2);
 }

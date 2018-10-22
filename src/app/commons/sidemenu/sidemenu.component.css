@@ -49,7 +49,7 @@ nav:hover .sidebar-title.active {
 }
 
 .activated-bg {
-  background-color: #F5FAFF;
+  background-color: var(--gray-2);
   height: 50px;
   left: 0;
   width: 330px;
@@ -57,14 +57,14 @@ nav:hover .sidebar-title.active {
 }
 
 .top-line {
-  border-bottom: 1px solid #A2B6D3;
+  border-bottom: 1px solid var(--gray-1);
   right: -12px;
   position: absolute;
   width: 48px;
 }
 
 .top-line-in {
-  border-bottom: 1px solid #A2B6D3;
+  border-bottom: 1px solid var(--gray-1);
   left: 45px;
   position: absolute;
   width: 252px;
@@ -72,7 +72,7 @@ nav:hover .sidebar-title.active {
 
 /* Efecto para los <íconos y títulos> del menú lateral */
 .sidebar-anchor {
-  color: #A2B6D3;
+  color: var(--gray-1);
 }
 
 .sidebar-anchor:hover {
@@ -84,13 +84,13 @@ nav:hover .sidebar-title.active {
 }
 
 .user-title {
-  color: #A2B6D3;
+  color: var(--gray-1);
   left: 40px;
   top: 16px;
 }
 
 .user {
-  color: #A2B6D3;
+  color: var(--gray-1);
   left: 40px;
   top: 30px;
 }
@@ -107,7 +107,7 @@ nav:hover .sidebar-title.active {
 
 .secondary-list li a span,
 .secondary-list li a i {
-  color: #A2B6D3;
+  color: var(--gray-1);
 }
 
 .secondary-list li a span:hover,

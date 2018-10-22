@@ -9,16 +9,16 @@
       <div class="activated-bg position-absolute" *ngIf="_router.url === '/home'"></div>
       <div class="activated-line position-absolute" *ngIf="_router.url === '/home'"></div>
       <a class="sidebar-anchor" routerLink="/home" routerLinkActive='activated'>
-        <i class="material-icons mt-3" pTooltip="home" [tooltipDisabled]="!this.checked" [tooltipZIndex]="10000">home</i>
-        <span class="sidebar-title ml-4 mt-3 fs-13" [class.active]="this.checked">Home</span>
+        <i class="material-icons mt-3" pTooltip="Inicio" [tooltipDisabled]="!this.checked" [tooltipZIndex]="10000">home</i>
+        <span class="sidebar-title ml-4 mt-3 fs-13" [class.active]="this.checked">Inicio</span>
       </a>
     </li>
     <li class="pb-3">
       <div class="activated-bg position-absolute" *ngIf="_router.url === '/give-feddback'"></div>
       <div class="activated-line position-absolute" *ngIf="_router.url === '/give-feddback'"></div>
       <a class="sidebar-anchor" routerLink="/give-feddback" routerLinkActive='activated'>
-        <i class="material-icons mt-3" pTooltip="give feddback" [tooltipDisabled]="!this.checked" [tooltipZIndex]="10000">playlist_add_check</i>          
-        <span class="sidebar-title ml-4 mt-3 fs-13" [class.active]="this.checked">Give Feddback</span>
+        <i class="material-icons mt-3" pTooltip="Dar Feedback" [tooltipDisabled]="!this.checked" [tooltipZIndex]="10000">playlist_add_check</i>          
+        <span class="sidebar-title ml-4 mt-3 fs-13" [class.active]="this.checked">Dar Feedback</span>
       </a>
     </li>
   </ul>
@@ -29,13 +29,13 @@
       <li>
         <a>
           <p-inputSwitch [style]="{'font-size':'0.5rem'}" [(ngModel)]="checked"></p-inputSwitch>
-          <span class="sidebar-title ml-4 mt-1 fs-13" [class.active]="this.checked">Fix sidebar</span>
+          <span class="sidebar-title ml-4 mt-1 fs-13" [class.active]="this.checked">Fijar men&uacute;</span>
         </a>
       </li>
       <li>
         <a class="pointer" routerLink="">
           <i class="material-icons">input</i>
-          <span class="sidebar-title ml-4 fs-13" [class.active]="this.checked">Log out</span>
+          <span class="sidebar-title ml-4 fs-13" [class.active]="this.checked">Cerrar</span>
         </a>
       </li>
     </ul>
